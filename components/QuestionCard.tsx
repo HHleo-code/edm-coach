@@ -22,11 +22,11 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
   const isLastStep = stepData.id === 4;
 
   const handleNextClick = useCallback(() => {
-    onNextStep(stepData.id + 1);
+    onNextStep(stepData.id);
   }, [onNextStep, stepData.id]);
 
   const handlePrevClick = useCallback(() => {
-    onPrevStep(stepData.id - 1);
+    onPrevStep(stepData.id);
   }, [onPrevStep, stepData.id]);
 
   return (
